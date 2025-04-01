@@ -1,3 +1,16 @@
 .test{
     color: red;
 }
+
+.info{
+    max-width: 500px;
+    margin: auto;
+    font-size: 14px;
+    display: block;
+}
+
+#resetForm{
+    max-width: 500px;
+    margin: auto;
+    width: 500px;
+}

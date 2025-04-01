@@ -31,7 +31,10 @@ form.addEventListener("submit", async (e) => {
         const data = await res.json();
 
         if (res.ok) {
-            showAlert(data.message || "Password reset successful. Please Login to the app with new password", "success");
+
+            document.querySelector(".info").style.display = "none !important";
+
+            showAlert(data.message || "Password reset successful, Please Login to the app with new password", "success");
             form.reset();
             form.style.display = "none";
         } else {
